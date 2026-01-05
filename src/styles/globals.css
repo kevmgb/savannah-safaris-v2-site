@@ -2,6 +2,7 @@
 
 :root {
   --font-size: 16px;
+  --font-sans: "Rubik", sans-serif;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
@@ -128,12 +129,14 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
+    outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Rubik', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Rubik", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

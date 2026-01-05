@@ -6,7 +6,7 @@ import { WhyChooseUs } from "./components/WhyChooseUs";
 import { Testimonials } from "./components/Testimonials";
 import { CTASection } from "./components/CTASection";
 import { Footer } from "./components/Footer";
-
+import React from "react";
 export default function App() {
   return (
     <div className="min-h-screen">
