@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import React from "react";
 
 export function Hero() {
   return (
@@ -17,13 +18,14 @@ export function Hero() {
       {/* Hero Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white">
         <h1 className="mb-6 max-w-4xl text-5xl md:text-6xl lg:text-7xl">
-          Explore Kenya with Expert-Led Safari & Trekking Adventures
+          Explore East Africa, One Adventure at a Time
         </h1>
         <p className="mb-8 max-w-2xl text-lg md:text-xl opacity-90">
-          Discover authentic Kenyan wildlife safaris, breathtaking hikes, and multi-day trekking experiences guided by local experts
+          Expert-led day hikes, mountaineering expeditions, and unforgettable
+          safari tours.
         </p>
-        <Button 
-          size="lg" 
+        <Button
+          size="lg"
           className="bg-[var(--safari-brown)] hover:bg-[var(--safari-earth)] text-white px-8 py-6 text-lg"
         >
           View Our Tours

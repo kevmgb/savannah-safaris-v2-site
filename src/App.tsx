@@ -1,23 +1,19 @@
-import { Navigation } from "./components/Navigation";
-import { Hero } from "./components/Hero";
-import { Services } from "./components/Services";
-import { FeaturedDestinations } from "./components/FeaturedDestinations";
-import { WhyChooseUs } from "./components/WhyChooseUs";
-import { Testimonials } from "./components/Testimonials";
-import { CTASection } from "./components/CTASection";
-import { Footer } from "./components/Footer";
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { BlogIndex } from "./pages/BlogIndex";
+import { BlogPost } from "./pages/BlogPost";
+import { Admin } from "./pages/Admin";
+
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <Hero />
-      <Services />
-      <FeaturedDestinations />
-      <WhyChooseUs />
-      <Testimonials />
-      <CTASection />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
