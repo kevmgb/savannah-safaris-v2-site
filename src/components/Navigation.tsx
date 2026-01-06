@@ -7,11 +7,11 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/50 to-transparent">
-      <div className="max-w-7xl mx-auto px-4 py-4">
+    <nav className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/50 to-transparent backdrop-blur-sm">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center p-4">
             <img
               src="/logo.png"
               alt="Savannah Outdoors Safaris"
@@ -23,9 +23,9 @@ export function Navigation() {
           <div className="hidden md:flex items-center gap-8">
             <a
               href="#"
-              className="text-white hover:text-white/80 transition-colors uppercase"
+              className="text-white hover:text-white/80 transition-colors uppercase font-medium tracking-[0.2em]"
               style={{
-                fontFamily: "var(--font-serif)",
+                fontFamily: "'Montserrat', sans-serif",
                 textTransform: "uppercase",
               }}
             >
@@ -33,9 +33,9 @@ export function Navigation() {
             </a>
             <a
               href="#"
-              className="text-white hover:text-white/80 transition-colors uppercase"
+              className="text-white hover:text-white/80 transition-colors uppercase font-medium tracking-[0.2em]"
               style={{
-                fontFamily: "var(--font-serif)",
+                fontFamily: "'Montserrat', sans-serif",
                 textTransform: "uppercase",
               }}
             >
@@ -43,9 +43,9 @@ export function Navigation() {
             </a>
             <Link
               to="/blog"
-              className="text-white hover:text-white/80 transition-colors uppercase"
+              className="text-white hover:text-white/80 transition-colors uppercase font-medium tracking-[0.2em]"
               style={{
-                fontFamily: "var(--font-serif)",
+                fontFamily: "'Montserrat', sans-serif",
                 textTransform: "uppercase",
               }}
             >
@@ -53,30 +53,21 @@ export function Navigation() {
             </Link>
             <a
               href="#"
-              className="text-white hover:text-white/80 transition-colors uppercase"
+              className="text-white hover:text-white/80 transition-colors uppercase font-medium tracking-[0.2em]"
               style={{
-                fontFamily: "var(--font-serif)",
+                fontFamily: "'Montserrat', sans-serif",
                 textTransform: "uppercase",
               }}
             >
               About
             </a>
-            <a
-              href="#"
-              className="text-white hover:text-white/80 transition-colors uppercase"
-              style={{
-                fontFamily: "var(--font-serif)",
-                textTransform: "uppercase",
-              }}
-            >
-              Contact
-            </a>
+
             <Button
               variant="outline"
-              className="border-white  hover:bg-white/10 uppercase"
-              style={{ textTransform: "uppercase" }}
+              className="bg-[var(--safari-red)] hover:bg-[var(--safari-red)] text-white"
+              style={{ textTransform: "uppercase", borderRadius: "0px" }}
             >
-              Book Now
+              Contact
             </Button>
           </div>
 
@@ -145,20 +136,13 @@ export function Navigation() {
               >
                 About
               </a>
-              <a
-                href="#"
-                className="text-white hover:text-white/80 transition-colors py-2 uppercase"
+              <Button
+                variant="outline"
+                className="border-white text-white hover:bg-white/10 w-full uppercase"
                 style={{
                   fontFamily: "var(--font-serif)",
                   textTransform: "uppercase",
                 }}
-              >
-                Contact
-              </a>
-              <Button
-                variant="outline"
-                className="border-white text-white hover:bg-white/10 w-full uppercase"
-                style={{ textTransform: "uppercase" }}
               >
                 Book Now
               </Button>

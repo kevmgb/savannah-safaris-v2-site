@@ -20,7 +20,7 @@ export function Hero() {
         <h1 className="mb-6 max-w-4xl text-5xl md:text-6xl lg:text-7xl">
           Explore East Africa, One Adventure at a Time
         </h1>
-        <p className="mb-8 max-w-2xl text-lg md:text-xl opacity-90">
+        <p className="mb-8 max-w-4xl text-lg md:text-xl opacity-90">
           Expert-led day hikes, mountaineering expeditions, and unforgettable
           safari tours.
         </p>

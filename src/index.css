@@ -788,6 +788,10 @@
     background-color: var(--safari-brown);
   }
 
+  .bg-\[var\(--safari-red\)\] {
+    background-color: var(--safari-red);
+  }
+
   .bg-\[var\(--safari-dark\)\] {
     background-color: var(--safari-dark);
   }
